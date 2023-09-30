@@ -1,0 +1,7 @@
+import sys
+b="KQRBNPkqrbnp/"
+def a(s):print(chr(s+9812), end="")if s!=12else print()
+for j in sys.argv[1:]:
+	for i in j:
+		if(i==' '):print('\n');break
+		a(b.index(i))if i in b else print(' '*int(i),end="")
